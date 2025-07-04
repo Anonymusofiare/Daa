@@ -129,7 +129,7 @@
 //      for(int i=0;i<n;i++){
 //         graph.add(new ArrayList<>());
 //      }   
-//       graph.get(0).addAll(List.of(1,2,3));
+//         graph.get(0).addAll(List.of(1,2,3));
 //         graph.get(1).addAll(List.of(2,4));
 //         graph.get(3).addAll(List.of(4,5));
 //         boolean[] visited=new boolean[n];
@@ -219,6 +219,24 @@
 //         sub(arr,i+1,sum,p,target);
 //     }
 // }
+// ------------------------------------------
+// sumof subsets
+// public class arrays{
+//     public static void main(String[] args) {
+//      int[] arr={2,3,5,6,8};
+//      int target=8;
+//      sub(arr,0,0,"",target);   
+//     }
+//     static void sub(int[] arr,int i,int sum,String path,int target){
+//         if(sum==target){
+//             System.out.println(path);
+//             return;
+//         }
+//         if(i==arr.length || sum>target) return;
+//         sub(arr,i+1,sum+arr[i],path+arr[i]+" ",target);
+//         sub(arr,i+1,sum,path,target);
+//     }
+// }
 // -----------------------------------------
 // n queeens
 // public class arrays{
@@ -247,3 +265,4 @@
 //         return false;
 //     }
 // }
+// -----------------------------------------
